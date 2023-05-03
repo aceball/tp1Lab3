@@ -1,16 +1,20 @@
 <!doctype html>
 <html>
+
 <head>
-<title>Red Social</title>
-<meta name="tp1 para lab3" content="Red Social">
-<meta name="integrantes" content="TP1: Lara Avila, Adrian Ceballos, Valentina Colombatti.">
+    <title>Red Social</title>
+    <meta name="tp1 para lab3" content="Red Social">
+    <meta name="integrantes" content="TP1: Lara Avila, Adrian Ceballos, Valentina Colombatti.">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
-    <section id = "nav"> 
+
+    <section id="nav">
         <nav class="menu">
-            <ul>                     
+            <ul>
                 <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-                <img src="img\companiLogo.png" alt="avatar-jane-doe">         
+                <img src="img\companiLogo.png" alt="avatar-jane-doe">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Post</a></li>
                 <li><a href="#">Sobre mi</a></li>
@@ -18,77 +22,92 @@
             <form action="aca va path Js"></form>
             <input type="text" id="Ingresar" name="lname"><br>
             </form>
-          </nav>
-    </section> 
+        </nav>
+    </section>
 
-    <section id = "profile"> 
-
-
-        <div>
-        <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-        <img src="img\userAvatar.jpeg" alt="avatar-jane-doe"  width="300" height="300">   
-        </div>        
-        <div>    
-            <h2><p>Jane Doe</p></h2>
-            <p><strong>Email: </strong>jane_doe@email.com</p>
-            <p><strong>Fecha de nacimiento: </strong></p>
-            <p><strong>Teléfono: </strong>918-936-9585</p>          
-            <p><strong>Ciudad: </strong>Tokyo,Japón</p>
-            <p>Trabajando en <strong>Lawn N </strong></p>
+    <div class="grid-layout">
+        <div class="caja c1">
+            <section id="profile">
+                <div>
+                    <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
+                    <img src="img\userAvatar.jpeg" class="img" alt="avatar-jane-doe" width="300" height="300">
+                </div>
+                <div class="perfil">
+                    <div>
+                        <h2>
+                            <p>Jane Doe</p>
+                        </h2>
+                        <p><strong>Email: </strong>jane_doe@email.com</p>
+                        <p><strong>Fecha de nacimiento: </strong></p>
+                        <p><strong>Teléfono: </strong>918-936-9585</p>
+                        <p><strong>Ciudad: </strong>Tokyo,Japón</p>
+                        <p>Trabajando en <strong>Lawn N </strong></p>
+                    </div>
+                    <div>
+                        <!-- recordar cambiar etiqueta button-->
+                        <button>Seguir</button>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div>
-             <!-- recordar cambiar etiqueta button-->
-            <button>Seguir</button>
+        <div class="caja c2">
+            <section id="Post">
+                <p>Publicado hace 1 semana</p>
+                <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
+                <img src="img\postImg.jpg" alt="avatar-jane-doe" width="300" height="300">
+                <div>
+                    <!-- recordar cambiar etiqueta button-->
+                    <button>Me gusta</button>
+                    <p><strong>200</strong>Likes</p>
+                </div>
+                <div>
+                    <p>Comentarios</p> <!-- no borrar estos numeros, son los emojis-->
+                    <p><strong>Adrian Ceballos </strong>¡Wow. esa foto de tokio es impresionante!&#127750; &#10024;</p>
+                    <p><Strong>Lara Avila </Strong> ¡esa foto de tokio es simplemente espectacular! Me trae tantos
+                        recuerdos.</p>
+                    <p><strong>Vaalentina Colombatti </strong>¡Espero algún dia pueda ver Tokio en persona!</p>
+                </div>
+                <div>
+                    <form action="aca va path Js"></form>
+                    <input type="text" id="dejarComentario" name="lname"><br>
+                    </form>
+                    <!-- recordar cambiar etiqueta button-->
+                    <button>Comentar</button>
+                </div>
+            </section>
         </div>
+        <div class="caja c3">
+            <section id="About me">
 
-    </section> 
 
-    <section id = "About me"> 
-        <H3>Sobre mí</H3>
-        <p>
-            ¡hola a todos! Soy Janem y actualmente vivo en la vibrante y emocionante ciduad de Tokio,Japón.Me encanta
-            capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura
-            moderna y las tradiciones centenarias que conviven en esta metropolis única. Desde rascacielos deslumbrantes
-            y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincon de
-            esta increíble ciudad.
-        </p>
-    </section> 
-
-    <section id = "Post"> 
-        <div>
-            <p>Publicado hace 1 semana</p>
-             <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-            <img src="img\postImg.jpg" alt="avatar-jane-doe"  width="300" height="300"> 
-            <div>
-                <!-- recordar cambiar etiqueta button-->
-                <button>Me gusta</button>
-                <p><strong>200</strong>Likes</p>
-            </div>  
-            <div>
-                <p>Comentarios</p>                                   <!-- no borrar estos numeros, son los emojis-->
-                <p><strong>Adrian Ceballos </strong>¡Wow. esa foto de tokio es impresionante!&#127750; &#10024;</p>
-                <p><Strong>Lara Avila </Strong> ¡esa foto de tokio es simplemente espectacular! Me trae tantos recuerdos.</p>    
-                <p><strong>Vaalentina Colombatti </strong>¡Espero algún dia pueda ver Tokio en persona!</p>
-            </div>
-            <div>
-                <form action="aca va path Js"></form>
-                <input type="text" id="dejarComentario" name="lname"><br>
-                </form>
-                                <!-- recordar cambiar etiqueta button-->
-                <button>Comentar</button>
-            </div>
+                <H3>Sobre mí</H3>
+                <p>
+                    ¡hola a todos! Soy Janem y actualmente vivo en la vibrante y emocionante ciduad de
+                    Tokio,Japón.Me
+                    encanta
+                    capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la
+                    arquitectura
+                    moderna y las tradiciones centenarias que conviven en esta metropolis única. Desde rascacielos
+                    deslumbrantes
+                    y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada
+                    rincon
+                    de
+                    esta increíble ciudad.
+                </p>
+            </section>
         </div>
-
-    </section> 
-
-    <section id = "footer"> 
-        <footer>
-            <p>No quedan mas publicaciones recientes</p>
-            <!-- recordar cambiar etiqueta button-->
-            <button>Regresar al principio</button>
-            <p>Esta web fue realizada por 3 estudiantes:</p>
-            <p>Lara Avila, Adrian Ceballos, Valentina Colombatti.</p>
-        </footer>
-    </section> 
+        <div class="caja c4">
+            <section id="footer">
+                <footer>
+                    <p>No quedan mas publicaciones recientes</p>
+                    <!-- recordar cambiar etiqueta button-->
+                    <button>Regresar al principio</button>
+                    <p>Esta web fue realizada por 3 estudiantes:</p>
+                    <p>Lara Avila, Adrian Ceballos, Valentina Colombatti.</p>
+                </footer>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
