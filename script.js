@@ -1,9 +1,23 @@
 window.onload = iniciar;
 
-function megusta(){
-    document.getElementById("megusta-numero").innerHTML = parseInt(document.getElementById("megusta-numero").innerHTML) + 1;
+
+function megusta() {
+  let sumando = true;
+  if (sumando === true) {
+    document.getElementById("megusta-numero").innerHTML = parseInt(document.getElementById("megusta-numero").innerHTML) + 1;  
     document.getElementById("btn-mg").onclick = null;
+    sumando = !sumando;
+  } else {
+    document.getElementById("megusta-numero").innerHTML = parseInt(document.getElementById("megusta-numero").innerHTML) - 1;  
+    sumando = sumando;
+  }
+
+
 }
+
+
+
+
 
 function seguir(){
     var seguir = document.getElementById("seguir-btn").innerHTML;
@@ -28,4 +42,11 @@ function comentar(){
   var comentarioFinal = usuario.bold() + ":   " + comentario;
 
   document.getElementById("comentario-nuevo").innerHTML = comentarioFinal;
+}
+
+
+let mybutton = document.getElementById("botonFooter");
+
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
 }

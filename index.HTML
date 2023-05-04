@@ -2,8 +2,10 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Red Social</title>
     <meta name="tp1 para lab3" content="Red Social">
+     <!-- INTEGRANTES: -->
     <meta name="integrantes" content="TP1: Lara Avila, Adrian Ceballos, Valentina Colombatti.">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +17,6 @@
 
     <section id="nav">
         <nav class="menu">
-            <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
             <img class="log" src="img/Qx8uR89.png" alt="avatar-jane-doe">
             <form>
                 <input class="us" type="text" placeholder=" Ingrese un usuario" id="usuario" name="lname" required>
@@ -27,7 +28,6 @@
         <div class="caja c1">
             <section id="profile" class="grid-layout">
                 <div class="cj cj1">
-                    <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
                     <img src="img/99qgQJy.jpeg" class="img" alt="avatar-jane-doe" width="300" height="300">
                 </div>
                 <div class="perfil">
@@ -53,12 +53,11 @@
                 <p>Publicado hace 1 semana</p>
                 <img class="post" src="img/bq9db41.jpeg" alt="avatar-jane-doe">
                 <div>
-                    <!-- recordar cambiar etiqueta button-->
                     <button class="mg" id="btn-mg" onclick="megusta()">Me gusta</button>
                     <span id="megusta-numero">200</span><span> Likes</span>
                 </div>
                 <div>
-                    <p>Comentarios</p> <!-- no borrar estos numeros, son los emojis-->
+                    <p>Comentarios</p>
                     <p><strong>Adrian Ceballos </strong>¡Wow. esa foto de tokio es impresionante!&#127750; &#10024;</p>
                     <p><Strong>Lara Avila </Strong> ¡esa foto de tokio es simplemente espectacular! Me trae tantos
                         recuerdos.</p>
@@ -81,28 +80,16 @@
 
                 <H3>Sobre mí</H3>
                 <p>
-                    ¡hola a todos! Soy Janem y actualmente vivo en la vibrante y emocionante ciduad de
-                    Tokio,Japón.Me
-                    encanta
-                    capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la
-                    arquitectura
-                    moderna y las tradiciones centenarias que conviven en esta metropolis única. Desde rascacielos
-                    deslumbrantes
-                    y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada
-                    rincon
-                    de
-                    esta increíble ciudad.
-                </p>
+                    ¡hola a todos! Soy Janem y actualmente vivo en la vibrante y emocionante ciduad de Tokio,Japón.Me encanta capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metropolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincon de esta increíble ciudad.</p>
             </section>
         </div>
         <div class="caja c4">
             <section id="footer">
                 <footer>
-                    <p>No quedan mas publicaciones recientes</p>
-                    <!-- recordar cambiar etiqueta button-->
-                    <button>Regresar al principio</button>
-                    <p>Esta web fue realizada por 3 estudiantes:</p>
-                    <p>Lara Avila, Adrian Ceballos, Valentina Colombatti.</p>
+                    <p><strong>No quedan mas publicaciones recientes</strong></p><br>
+                    <button onclick="topFunction()" id="botonFooter" title="btnRegresar">Regresar al principio</button><br><br>
+                    <p><strong>Esta web fue realizada por 3 estudiantes:</strong></p>
+                    <p><a href="https://github.com/LBA05" target="_blank"><strong>Lara Avila</strong></a><strong> - </strong><a href="https://github.com/aceball" target="_blank"><strong>Adrian Ceballos</strong></a><strong> - </strong> <a href="https://github.com/valencolombatti" target="_blank"><strong>Valentina Colombatti</strong></a></p>
                 </footer>
             </section>
         </div>
@@ -111,3 +98,5 @@
 </body>
 
 </html>
+
+
