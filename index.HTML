@@ -13,7 +13,7 @@
     <section id="nav">
         <nav class="menu">
             <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-            <img src="img\companiLogo.png" alt="avatar-jane-doe">
+            <img src="img/Qx8uR89.png" alt="avatar-jane-doe">
             <input class="us" type="text" id="Ingresar" name="lname"><br>
         </nav>
     </section>
@@ -23,7 +23,7 @@
             <section id="profile" class="grid-layout">
                 <div class="cj cj1">
                     <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-                    <img src="img\userAvatar.jpeg" class="img" alt="avatar-jane-doe" width="300" height="300">
+                    <img src="img/99qgQJy.jpeg" class="img" alt="avatar-jane-doe" width="300" height="300">
                 </div>
                 <div class="perfil">
                     <div class="cj cj2">
@@ -37,8 +37,8 @@
                         <p>Trabajando en <strong>Lawn N </strong></p>
                     </div>
                     <div class="cj cj3">
-                        <!-- recordar cambiar etiqueta button-->
-                        <button>Seguir</button>
+            
+                        <button id="seguir-btn" onclick="seguir()">Seguir</button>
                     </div>
                 </div>
             </section>
@@ -47,11 +47,11 @@
             <section id="Post">
                 <p>Publicado hace 1 semana</p>
                 <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-                <img src="img\postImg.jpg" alt="avatar-jane-doe" width="300" height="300">
+                <img src="img/bq9db41.jpeg" alt="avatar-jane-doe" width="300" height="300">
                 <div>
                     <!-- recordar cambiar etiqueta button-->
-                    <button>Me gusta</button>
-                    <p><strong>200</strong>Likes</p>
+                    <button id="btn-mg" onclick="megusta()">Me gusta</button>
+                    <span id="megusta-numero">200</span><span> Likes</span>
                 </div>
                 <div>
                     <p>Comentarios</p> <!-- no borrar estos numeros, son los emojis-->
@@ -60,12 +60,12 @@
                         recuerdos.</p>
                     <p><strong>Vaalentina Colombatti </strong>¡Espero algún dia pueda ver Tokio en persona!</p>
                 </div>
+                <div id="comentario-nuevo">
+                    
+                </div>
                 <div>
-                    <form action="aca va path Js"></form>
-                    <input type="text" id="dejarComentario" name="lname"><br>
-                    </form>
-                    <!-- recordar cambiar etiqueta button-->
-                    <button>Comentar</button>
+                    <input type="text" id="comentario" name="lname"><br>
+                    <button id="comentar-btn" onclick="comentar()">Comentar</button>
                 </div>
             </section>
         </div>
@@ -101,6 +101,7 @@
             </section>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
