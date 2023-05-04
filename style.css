@@ -50,8 +50,10 @@ body {
 .menu{
     background: rgb(187, 187, 247);
     width: 100%;
-    text-align: right;
+    text-align: left;
 }
+
+
 .cj1 {
     grid-column: 1/1;
     
