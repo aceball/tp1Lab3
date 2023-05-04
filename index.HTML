@@ -6,6 +6,9 @@
     <meta name="tp1 para lab3" content="Red Social">
     <meta name="integrantes" content="TP1: Lara Avila, Adrian Ceballos, Valentina Colombatti.">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,8 +16,10 @@
     <section id="nav">
         <nav class="menu">
             <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-            <img src="img/Qx8uR89.png" alt="avatar-jane-doe">
-            <input class="us" type="text" id="usuario" name="lname">
+            <img class="log" src="img/Qx8uR89.png" alt="avatar-jane-doe">
+            <form>
+                <input class="us" type="text" placeholder=" Ingrese un usuario" id="usuario" name="lname" required>
+            </form>
         </nav>
     </section>
 
@@ -37,8 +42,8 @@
                         <p>Trabajando en <strong>Lawn N </strong></p>
                     </div>
                     <div class="cj cj3">
-            
-                        <button id="seguir-btn" onclick="seguir()">Seguir</button>
+
+                        <button class="seg" id="seguir-btn" onclick="seguir()">Seguir</button>
                     </div>
                 </div>
             </section>
@@ -46,11 +51,10 @@
         <div class="caja c2">
             <section id="Post">
                 <p>Publicado hace 1 semana</p>
-                <!-- recordar cambiar el tamaño del logo o sacar las dimenciones de la etiqueta -->
-                <img src="img/bq9db41.jpeg" alt="avatar-jane-doe" width="300" height="300">
+                <img class="post" src="img/bq9db41.jpeg" alt="avatar-jane-doe">
                 <div>
                     <!-- recordar cambiar etiqueta button-->
-                    <button id="btn-mg" onclick="megusta()">Me gusta</button>
+                    <button class="mg" id="btn-mg" onclick="megusta()">Me gusta</button>
                     <span id="megusta-numero">200</span><span> Likes</span>
                 </div>
                 <div>
@@ -58,14 +62,16 @@
                     <p><strong>Adrian Ceballos </strong>¡Wow. esa foto de tokio es impresionante!&#127750; &#10024;</p>
                     <p><Strong>Lara Avila </Strong> ¡esa foto de tokio es simplemente espectacular! Me trae tantos
                         recuerdos.</p>
-                    <p><strong>Vaalentina Colombatti </strong>¡Espero algún dia pueda ver Tokio en persona!</p>
+                    <p><strong>Valentina Colombatti </strong>¡Espero algún dia pueda ver Tokio en persona!</p>
                 </div>
                 <div id="comentario-nuevo">
-                    
+
                 </div>
                 <div>
-                    <input type="text" id="comentario" name="lname"><br>
-                    <button id="comentar-btn" onclick="comentar()">Comentar</button>
+                    <form>
+                        <input type="text" class="comen" id="comentario" name="lname">
+                        <button type="submit" class="coment" id="comentar-btn" onclick="comentar()">Comentar</button>
+                    </form>
                 </div>
             </section>
         </div>

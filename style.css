@@ -1,5 +1,7 @@
 body {
     background: rgb(218, 218, 218);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 
 }
 
@@ -27,7 +29,8 @@ body {
 }
 
 .img{
-    border-radius: 50%;
+    border-radius: 50%;    
+    padding: 4px;
     border: 4px solid blue;
   
 }
@@ -50,15 +53,18 @@ body {
 .us{
     height: 30px;
     margin-right: 20px;
+    border-radius: 5px;
     
 }
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(187, 187, 247);
-    width: 100%;
-    text-align: left;
+    background: rgb(137, 137, 248);
+}
+
+.log{
+    padding: 10px;
 }
 
 .cj1 {
@@ -68,14 +74,45 @@ body {
 
 .cj2 {
     grid-column: 2/3;
-    text-align: left;
     padding-right: 250px;
     
-
+}
+.post{
+    border-radius: 5%;
+    width: 511px;
+    height: 340px;
+    margin-bottom: 20px;
+    margin-left: 60px;
 }
 
 .cj3 {
     grid-column: 3/4;
     text-align: right;
- 
+}
+.comen{
+    width: 550px;
+    border-radius: 5px;
+}
+.coment{
+    border-radius: 5px;
+    border-color: rgb(137, 137, 248);
+    background-color: rgb(137, 137, 248);
+    color:white;
+}
+.seg{
+    border-radius: 5px;
+    border-color: rgb(137, 137, 248);
+    background-color: rgb(137, 137, 248);
+    color:white;
+    width: 100px;
+}
+.mg{
+    border-radius: 5px;
+    border-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    background-color: white;
+    color: blue;
+    margin-right: 450px;
 }
