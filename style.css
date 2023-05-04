@@ -26,9 +26,6 @@ body {
     
 }
 
-.perfil{
-    text-align: right; 
-}
 .img{
     border-radius: 50%;
   
@@ -51,7 +48,25 @@ body {
 }
 
 .menu{
-    background: white;
+    background: rgb(187, 187, 247);
     width: 100%;
     text-align: right;
+}
+.cj1 {
+    grid-column: 1/1;
+    
+}
+
+.cj2 {
+    grid-column: 2/3;
+    text-align: left;
+    padding-right: 250px;
+    
+
+}
+
+.cj3 {
+    grid-column: 3/4;
+    text-align: right;
+ 
 }
